@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dip"
+        android:text="EE-193 WIN Motion Detector Demo"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Accelerometer:"
+                android:textSize="10sp" />
+        </TableRow>
+
+        
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="X-Axis"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Y-Axis"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Z-Axis"
+                android:textSize="10sp" />
+        </TableRow>
+        
+        <TableRow>
+
+            <TextView
+                android:id="@+id/x_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/y_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/z_axis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>
+        
+    
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Gravity:"
+                android:textSize="10sp" />
+        </TableRow>
+                
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="X-Axis"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Y-Axis"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Z-Axis"
+                android:textSize="10sp" />
+        </TableRow>
+        
+        <TableRow>
+
+            <TextView
+                android:id="@+id/x_axis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/y_axis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/z_axis2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>                
+
+ 
+   
+    		
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="140dp"
+        android:layout_height="170dp"
+        android:layout_weight="0.01"
+        android:layout_gravity="center"        
+        android:dial="@drawable/dial" />
+
+    <TableLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:stretchColumns="*" >
+        
+      <TableRow>  
+        
+   		<Button
+   		    android:id="@+id/click1"   		    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="onclick"
+        	android:text="start" />
+
+    	<Button
+            android:id="@+id/click2"    	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="onclick1"
+        	android:text="stop" />
+    
+        <TextView
+                android:id="@+id/filepath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        
+      </TableRow>  
+ 
+      
+      <TableRow>  
+        
+   		<Button
+   		    android:id="@+id/walking"   		    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="walking"
+        	android:text="walking" />
+
+    	<Button
+            android:id="@+id/running"    	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="running"
+        	android:text="running" />
+    	
+    	<Button
+            android:id="@+id/falling"    	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="falling"
+        	android:text="falling" />
+    	
+
+      </TableRow>   
+      
+      
+      <TableRow>  
+
+   		<Button
+   		    android:id="@+id/plus"   		    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="plus"
+        	android:text="+" />
+
+    	<Button
+            android:id="@+id/minus"    	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="minus"
+        	android:text="-" /> 	
+        	
+         <Button
+            android:id="@+id/change"    	    
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:onClick="change"
+        	android:text="Sensitive Change" />
+
+      </TableRow>   
+      
+      
+
+         
+             
+         <TextView
+                android:id="@+id/parameter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+      
+        
+        
+      
+    
+      
+      
+    
+    </TableLayout>
+    	
+</LinearLayout>
